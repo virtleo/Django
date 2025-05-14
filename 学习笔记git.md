@@ -35,13 +35,11 @@ git init
 我选择了GitHub平台：
 1.	GitHub：
  
-主页链接：Your Repositories
+主页链接：https://github.com/virtleo?tab=repositories
   
-排序算法链接（py）：algorithm/sort at master · virtleo/algorithm
+排序算法链接（py）：https://github.com/virtleo/algorithm/tree/master/sort
  
-  
- 
-Django框架学习：virtleo/Django
+Django框架学习：https://github.com/virtleo/Django
 四、学习心得
 1. 版本控制的必要性
 通过本次实践，我深刻认识到版本控制系统的重要性。在没有使用Git之前，我的项目文件夹中常常充斥着"final-v1"、"final-v2"、"really-final"等命名的文件副本，不仅占用空间，而且难以管理。Git通过精确的版本记录和高效的存储机制，彻底解决了这个问题。
