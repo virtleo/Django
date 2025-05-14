@@ -9,3 +9,5 @@
 建立github与本地的连接
 
 详细的可以上网查找，大体就是这样
+git remote -v:查看远程仓库
+git remote remove django：删除https地址
