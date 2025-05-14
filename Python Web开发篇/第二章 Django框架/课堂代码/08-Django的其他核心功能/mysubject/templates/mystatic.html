@@ -1,0 +1,16 @@
+{% load static %}
+<head>
+	<meta charset="UTF-8">
+	<title>Django框架使用案例</title>
+</head>
+<body>
+	<h2>欢饮使用Django框架</h2>
+
+	<ul>
+		<li><a href="{% url 'index' %}">返回首页</a></li>
+	</ul>
+	
+	<img src="/static/mypics/Penguins.jpg" width="300"/>
+	<img src="{% static '/mypics/Penguins.jpg' %}" width="300"/>
+</body>
+</html>

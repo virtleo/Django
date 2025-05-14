@@ -1,0 +1,273 @@
+{% extends "diancan/base.html"  %}
+{% load static  %}
+
+
+{% block main_body %}
+    <div class="container">
+        <div class="col-md-4">
+            <div class="panel panel-warning">
+                <div class="panel-heading"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购 物 车</div>
+                <table class="table table-striped">
+                        <tr>
+                            <th width="30">序</th>
+                            <th>菜品</th>
+                            <th width="72">数量</th>
+                            <th width="45">单价</th>
+                            <th>删除</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>梅菜扣肉+番茄鸡蛋</td>
+                            <td class="num"><i class="btn btn-default btn-xs"> - </i><span>1</span><i class="btn btn-default btn-xs"> + </i></td>
+                            <td class="price">38.00</td>
+                            <td><a href="#" class="btn btn-danger btn-xs" role="button">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>梅菜扣肉</td>
+                            <td class="num"><i class="btn btn-default btn-xs"> - </i><span>1</span><i class="btn btn-default btn-xs"> + </i></td>
+                            <td class="price">25.00</td>
+                            <td><a href="#" class="btn btn-danger btn-xs" role="button">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>梅菜扣肉</td>
+                            <td class="num"><i class="btn btn-default btn-xs"> - </i><span>1</span><i class="btn btn-default btn-xs"> + </i></td>
+                            <td class="price">25.00</td>
+                            <td><a href="#" class="btn btn-danger btn-xs" role="button">删除</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>梅菜扣肉</td>
+                            <td class="num"><i class="btn btn-default btn-xs"> - </i><span>1</span><i class="btn btn-default btn-xs"> + </i></td>
+                            <td class="price">25.00</td>
+                            <td><a href="#" class="btn btn-danger btn-xs" role="button">删除</a></td>
+                        </tr>
+                    </table>
+                    
+                    <li class="list-group-item">
+                        <b>购买方式: &nbsp; </b>  
+                        <input type="radio" name="ptype" checked value="1"> 堂吃 &nbsp; 
+                        <input type="radio" name="ptype" value="2"> 打包 &nbsp; 
+                    </li>
+                    <li class="list-group-item">
+                        <b>支付方式: &nbsp; </b> 
+                        <input type="radio" name="bank" checked value="1"> 现金 &nbsp; 
+                        <input type="radio" name="bank" value="2"> 支付宝 &nbsp; 
+                        <input type="radio" name="bank" value="3"> 微信
+                    </li>
+
+                    <div class="panel-footer" style="height:50px">
+                        <div style="width:120px;float:left;margin:5px 0px;">合计：￥<span style="color:red;font-weight:bold;">168.00</span> 元</div>
+                        <button type="submit" class="btn btn-warning" style="width:130px;float:right">结 &nbsp; 算</button>
+                    </div>
+             
+            </div>
+        </div>
+        <div class="col-md-8">
+            <!--标签页内容-->
+            <h5 style="padding-bottom:9px;border-bottom:1px solid #eee;color:#BB3D00"><span class="glyphicon glyphicon-list" aria-hidden="true"> 双拼套餐：</h5>
+            <div class="row shoplist">
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <div class="bn">￥<span class="price">25.00</span>元</a>
+                        <a href="#" class="btn btn-warning btn-xs pull-right" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <div class="bn">￥<span class="price">25.00</span>元
+                        <a href="#" class="btn btn-warning btn-xs pull-right" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <div class="bn">￥<span class="price">25.00</span>元
+                        <a href="#" class="btn btn-warning btn-xs pull-right" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <div class="bn">￥<span class="price">25.00</span>元
+                        <a href="#" class="btn btn-warning btn-xs pull-right" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <div class="bn">￥<span class="price">25.00</span>元
+                        <a href="#" class="btn btn-warning btn-xs pull-right" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <p><a href="#" class="btn btn-default btn-xs" role="button">￥<span style="color:red">25.00</span>元</a> &nbsp; 
+                        <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <p><a href="#" class="btn btn-default btn-xs" role="button">￥<span style="color:red">25.00</span>元</a> &nbsp; 
+                        <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <p><a href="#" class="btn btn-default btn-xs" role="button">￥<span style="color:red">25.00</span>元</a> &nbsp; 
+                        <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <p><a href="#" class="btn btn-default btn-xs" role="button">￥<span style="color:red">25.00</span>元</a> &nbsp; 
+                        <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <div class="thumbnail">
+                      <img src="{% static '/diancan/images/timg.jpg' %}" alt="...">
+                      <div class="caption">
+                        <h6>梅菜扣肉+番茄鸡蛋</h6>
+                        <p><a href="#" class="btn btn-default btn-xs" role="button">￥<span style="color:red">25.00</span>元</a> &nbsp; 
+                        <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 购买</a></p>
+                      </div>
+                    </div>
+                </div>
+            </div>   
+            <h4 style="padding-bottom:9px;border-bottom:1px solid #eee;"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"> 盖饭系列：</h4>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+            </div>   
+            <h4 style="padding-bottom:9px;border-bottom:1px solid #eee;"><span class="glyphicon glyphicon-cutlery" aria-hidden="true"> 汤/饮料：</h4>
+            <div class="row">
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <a href="#" class="thumbnail">
+                        <img src="{% static '/diancan/images/timg.jpg' %}"
+                             alt="通用的占位符缩略图">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+{% endblock %}
+
+

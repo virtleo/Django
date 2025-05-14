@@ -1,0 +1,41 @@
+{% load static  %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'diancan/css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'diancan/css/bootstrap.min.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="form-heading">login Form</h1>
+        <div class="login-form">
+            <div class="main-div">
+                <div class="panel">
+                    <h2>会 员 登 录</h2>
+                    <p style="color:red">{{errorinfo}}</p>
+                </div>
+                <form action="{% url 'dologin' %}" method="post" id="Login">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" name="username" class="form-control"  placeholder="登录账号">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="password" class="form-control" placeholder="登录密码">
+                    </div>
+                    <div class="forgot">
+                        <a href="reset.html">忘记密码?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">登录</button>
+                    <p>测试账号：zhangsan 密码：123</p>
+                </form>
+            </div>
+            <p class="botto-text"> Designed by Jack张</p>
+        </div>
+    </div>
+    
+    <script src="{% static 'diancan/js/jquery.min.js' %}"></script>
+    <script src="{% static 'diancan/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

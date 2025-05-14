@@ -1,0 +1,174 @@
+{% extends "diancan/base.html"  %}
+{% load static  %}
+
+
+{% block main_body %}
+    <!-- 页面主体开始 -->  
+    <div class="container">
+        <div class="col-md-12">
+            <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 订 单 列 表
+                    <button type="button" class="btn btn-warning btn-sm">刷 &nbsp; 新</button>
+                </div>
+                <table class="table table-striped">
+                        <tr>
+                            <th width="30">订单号</th>
+                            <th>会员</th>
+                            <th>操作员</th>
+                            <th>金额</th>
+                            <th>付款方式</th>
+                            <th>收款渠道</th>
+                            <th>支付状态</th>
+                            <th>订单状态</th>
+                            <th>下单时间</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>2018091601</td>
+                            <td>id203</td>
+                            <td>张三</td>
+                            <td class="price">128.00</td>
+                            <td>收银员</td>
+                            <td>微信</td> 
+                            <td>已支付</td>
+                            <td>运行中</td>
+                            <td>2016-09-16 18：30：20</td>
+                            <td>
+                                <button type="button" onclick="$('#myModal').modal({keyboard:false})" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 详情</button> 
+                                <a href="#" class="btn btn-info btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 完成</a> 
+                                <a href="#" class="btn btn-danger btn-xs" role="button"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018091601</td>
+                            <td>id203</td>
+                            <td>张三</td>
+                            <td class="price">128.00</td>
+                            <td>收银员</td>
+                            <td>微信</td> 
+                            <td>已支付</td>
+                            <td>运行中</td>
+                            <td>2016-09-16 18：30：20</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 详情</a> 
+                                <a href="#" class="btn btn-info btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 完成</a> 
+                                <a href="#" class="btn btn-danger btn-xs" role="button"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018091601</td>
+                            <td>id203</td>
+                            <td>张三</td>
+                            <td class="price">128.00</td>
+                            <td>收银员</td>
+                            <td>微信</td> 
+                            <td>已支付</td>
+                            <td>运行中</td>
+                            <td>2016-09-16 18：30：20</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 详情</a> 
+                                <a href="#" class="btn btn-info btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 完成</a> 
+                                <a href="#" class="btn btn-danger btn-xs" role="button"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 删除</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2018091601</td>
+                            <td>id203</td>
+                            <td>张三</td>
+                            <td class="price">128.00</td>
+                            <td>收银员</td>
+                            <td>微信</td> 
+                            <td>已支付</td>
+                            <td>运行中</td>
+                            <td>2016-09-16 18：30：20</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-xs" role="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> 详情</a> 
+                                <a href="#" class="btn btn-info btn-xs" role="button"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> 完成</a> 
+                                <a href="#" class="btn btn-danger btn-xs" role="button"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> 删除</a>
+                            </td>
+                        </tr>
+                </table>
+                <div class="panel-footer" style="height:50px">
+                    <div style="width:120px;float:left;margin:5px 0px;">合计订单：<span style="color:red;font-weight:bold;">38</span> 个</div>
+                    <nav aria-label="Page navigation" class="text-right">
+                      <ul class="pagination" style="margin:0px;">
+                        <li>
+                          <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                          <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面主体结束 -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">订单详情</h4>
+          </div>
+          <div class="modal-body">
+            <table class="table table-hover">
+                <tr>
+                    <th>序号</th>
+                    <th>菜品名称</th>
+                    <th>单价</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>梅菜扣肉+番茄鸡蛋</td>
+                    <td>25</td>
+                    <td>2</td>
+                    <td>50</td>
+                    <td>正常</td>
+                    <td><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>肉沫酸豆角</td>
+                    <td>15</td>
+                    <td>1</td>
+                    <td>15</td>
+                    <td>正常</td>
+                    <td><button>删除</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>红烧肉</td>
+                    <td>18</td>
+                    <td>1</td>
+                    <td>18</td>
+                    <td>正常</td>
+                    <td><button>删除</button></td>
+                </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            <button type="button" class="btn btn-primary">保存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
